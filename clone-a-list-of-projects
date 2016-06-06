@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# this script get the list of git projects and try to clone them to a local repository
+# the username and password are to be gievn each time
+cat list | while read line
+do
+
+echo -e "\n============ Getting $line ===========\n"
+printf  git clone $line
+
+done
